@@ -1,0 +1,19 @@
+.ant-advanced-search-form {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 50px;
+}
+
+.ant-col {
+    padding: 0 10px;
+}
+
+.ant-row {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.ant-form-item-label > label {
+    color: white;
+    font-weight: 600;
+}

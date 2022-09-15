@@ -1,23 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
+
+import FirstPageForm from './components/firstPage/FirstPageForm';
+import SecondPage from './components/secondPage/SecondPage';
 
 function App() {
+    const [step, onNext] = useState(0);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        {step === 0  ? <FirstPageForm onNext={onNext} /> : <SecondPage />}
     </div>
   );
 }
